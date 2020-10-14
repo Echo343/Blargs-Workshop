@@ -68,7 +68,7 @@ public class SoundManager {
 		double x = player.getPosX();
 		double y = player.getPosY();
 		double z = player.getPosZ();
-		player.getEntityWorld().getServer().getPlayerList().sendToAllNearExcept(player, x, y, z, range, player.getEntityWorld().func_234923_W_(), new SPlaySoundEffectPacket(soundIn, category, x, y, z, volume, 1.0F));
+		player.getEntityWorld().getServer().getPlayerList().sendToAllNearExcept(player, x, y, z, range, player.getEntityWorld().getDimensionKey(), new SPlaySoundEffectPacket(soundIn, category, x, y, z, volume, 1.0F));
 	}
 
 }
